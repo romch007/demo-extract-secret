@@ -16,3 +16,5 @@ jobs:
         uses: actions/checkout@v4
 
       - run: ./echo.sh
+        env:
+          CONFIDENTIAL_ENV_VAR: ${{ secrets.CONFIDENTIAL }}
