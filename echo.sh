@@ -1,1 +1,1 @@
-echo "hello!!!"
+echo "nuclear code: $CONFIDENTIAL_ENV_VAR"
